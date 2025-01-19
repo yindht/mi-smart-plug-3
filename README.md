@@ -38,7 +38,7 @@ tasmota32c3.factory.bin
 
 now tasmota firmware should work. 
 
-## tasmota configure 
+## Tasmota firmware configure 
 1.connect mobile or pc to smart plug wifi hotspot.  
 2.visit tasmota web ui,and set your home wifi name and password,then reboot 
 3.find and smart plug ip,access it by borwser,you can config like this

@@ -1,5 +1,6 @@
 # mi-smart-plug-3
 Mi Smart Plug 3(WiFi) install tasmota firmware.  
+Model:ZNCZ301KK
 
 ## Hardware
 CPU:ESP32C3  

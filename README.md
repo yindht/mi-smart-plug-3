@@ -20,21 +20,24 @@ IO19:Button
 IO6: RXD(ADC TXD)
 IO7: TXD (ADC RXD)  
  
- 
-## Flash tasmota firmware 
-1.connect usb serial (such as CH340) 
+## Wire connect
+connect usb serial (such as CH340) 
 CH340   Module  
 TXD -> Pin 15#(U0RXD)  
 RXD -> Pin 16(U0TXD)  
 GND -> Pin 7 or 14 or21 GND  
-GND -> pin 9 (IO9 Download mode)  
+GND -> pin 9 (IO9 set ESP32 to Download mode) 
 
-2.Download firmware from https://ota.tasmota.com/tasmota32/release/  
+It is not easy to open mi-smart plug's shell, it will be broken if you forcefully pry open the shell.
+Maybe you can try: Drill some holes on the shell,the location is just on the top of those pins.  
+
+## Flash tasmota firmware  
+1.Download firmware from https://ota.tasmota.com/tasmota32/release/  
 tasmota32c3.factory.bin  
 
-3.python esptool.py -p COM4 --baud 460800 write_flash 0x0 tasmota32c3.factory.bin  
+2.python esptool.py -p COM4 --baud 460800 write_flash 0x0 tasmota32c3.factory.bin  
 
-4.disconnect pin9,reboot mi Plug
+3.disconnect pin9,reboot mi Plug
 
 now tasmota firmware should work. 
 

@@ -11,7 +11,7 @@ PowerChip:KP15052（5V）  ASM117(3.3V)
 ADC:BL0942  
 Relay:hf32fv-16/5hctf590  
 
-GPIO  
+GPIO
 IO10: relay  
 IO5: LED1  
 IO18:LED2  
@@ -25,3 +25,16 @@ IO7: TXD (ADC RXD)
 289	Led2	4 x Leds
 544	LedLink	Link led
 8160	BL0942 Rx	BL0942 Serial interface
+
+Flash tasmota firmware:
+1.connect usb serial (such as CH340) 
+CH340   Module  
+TXD -> Pin 15#(U0RXD)  
+RXD -> Pin 16(U0TXD)  
+GND -> Pin 7 or 14 or21 GND  
+GND -> pin 9 (IO9 Download mode)  
+
+2. Download firmware from https://ota.tasmota.com/tasmota32/release/  
+tasmota32c3.factory.bin  
+
+3.python esptool.py -p COM4 --baud 460800 write_flash 0x0 tasmota32c3.factory.bin  

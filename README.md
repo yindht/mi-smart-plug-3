@@ -9,7 +9,8 @@ https://manuals.plus/zh-CN/xiaomi/mhcwb6s-b-2-4ghz-wifi-bluetooth-dual-mode-modu
 
 PowerChip:KP15052（5V）  ASM117(3.3V)  
 ADC:BL0942  
-Relay:hf32fv-16/5hctf590  
+Relay:hf32fv-16/5hctf590 
+  
 
 ## GPIO
 IO10: relay  
@@ -25,7 +26,8 @@ IO7: TXD (ADC RXD)
 289	Led2	4 x Leds
 544	LedLink	Link led
 8160	BL0942 Rx	BL0942 Serial interface
-
+  
+ 
 ## Flash tasmota firmware 
 1.connect usb serial (such as CH340) 
 CH340   Module  

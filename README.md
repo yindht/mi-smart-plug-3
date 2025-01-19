@@ -38,3 +38,14 @@ GND -> pin 9 (IO9 Download mode)
 tasmota32c3.factory.bin  
 
 3.python esptool.py -p COM4 --baud 460800 write_flash 0x0 tasmota32c3.factory.bin  
+
+4.disconnect pin9,reboot mi Plug
+
+4.now tasmota firmware should work. 
+connect to smart plug wifi hotspot ,and visit tasmota web ui,set your home wifi name and password in web ui
+then smart plug will reset,then you can config like this
+![mi-plug-3 config](https://github.com/yindht/mi-smart-plug-3/blob/main/doc/tasmota_config.png)
+then restart.
+now every thing sould work,you can control mi-smart plug 3 in your local home network.
+
+enjoy it!

@@ -3,7 +3,7 @@ Mi Smart Plug 3(WiFi) install tasmota firmware.
 
 Hardware info:  
 CPU:ESP32C3  
-Module:MHCWB6S-B
+Module:MHCWB6S-B  Flash:4MB
 https://manuals.plus/zh-CN/xiaomi/mhcwb6s-b-2-4ghz-wifi-bluetooth-dual-mode-module-manual  
 ![mi-plug-3 module pinout](https://github.com/yindht/mi-smart-plug-3/blob/main/doc/module_pin.png)
 

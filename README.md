@@ -16,5 +16,12 @@ IO10: relay
 IO5: LED1  
 IO18:LED2  
 IO19:Button  
-IO6: ADC Serial  
-IO7: ADC Serial  
+IO6: RXD(ADC TXD)
+IO7: TXD (ADC RXD)
+
+32	Button1	4 x Button
+224	Relay1	8 x Relays
+288	Led1	4 x Leds
+289	Led2	4 x Leds
+544	LedLink	Link led
+8160	BL0942 Rx	BL0942 Serial interface
